@@ -1,0 +1,47 @@
+{
+  "name": "@gardenjs/render-plugin-svelte",
+  "version": "1.0.1",
+  "description": "Plugin for rendering svelte components in gardenjs",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier --write --plugin prettier-plugin-svelte .",
+    "lint": "eslint src/."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gardenjs/render-plugin-svelte.git"
+  },
+  "keywords": [
+    "gardenjs",
+    "render",
+    "plugin",
+    "svelte"
+  ],
+  "author": "Robin Danzinger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gardenjs/render-plugin-svelte/issues"
+  },
+  "homepage": "https://github.com/gardenjs/render-plugin-svelte#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-svelte": "^2.35.1",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.1",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.1.2"
+  },
+  "dependencies": {
+    "svelte": "^4.2.9"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./mocks/*": "./src/sveltekit_mocks/*"
+  }
+}
