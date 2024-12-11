@@ -43,5 +43,8 @@
   "exports": {
     ".": "./index.js",
     "./mocks/*": "./src/sveltekit_mocks/*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
